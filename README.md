@@ -1,6 +1,6 @@
 # Sign Up Entelechia Application
 
-A demonstration using Angular 16 for a single-page application whith a sign up form.
+A demonstration using Angular 16 for a single-page application with a sign up form.
 
 ## Description
 
