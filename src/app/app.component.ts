@@ -5,6 +5,12 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title = 'sign-up-app';
+  title = 'entelechia-sign-up';
+  fullName : string = '';
+
+  getFullName(fullName: string){
+    this.fullName = fullName;
+  }
 }

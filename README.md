@@ -1,27 +1,36 @@
-# SignUpApp
+# Sign Up Entelechia Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
+A demonstration using Angular 16 for a single-page application whith a sign up form.
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The application contains the concepts for build a basic Angular application.
 
-## Code scaffolding
+It is based by the following features:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. The application has a responsive interface, making it easy to use across various devices.
 
-## Build
+2. The application dynamically displays the full name of the user in the subtitle, as they input their first and last name into the form.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. Form Validation: The form fields in the application with validation. All fields are required, and the password field has specific requirements, including a minimum of eight characters, a mixture of lower and uppercase letters, and restrictions against including the user's first or last name.
 
-## Running unit tests
+4. Data Interaction: Once the form is successfully filled, the application interacts with a test API to send the data and retrieve responses two times using RxJS for managing state and flow of data.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Technologies Used
 
-## Running end-to-end tests
+1. Angular v16: The primary framework used for building the application.
+3. RxJS: Used for managing asynchronous data and controlling form state.
+4. Bootstrap 4: Used for styling the application and making it responsive.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Usage
 
-## Further help
+### Prerequisite
+1. Node 18.16.1
+2. npm 9.5.1
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Setup
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Run npm install to install all necessary dependencies.
+4. Run ng serve to start the development server. Navigate to http://localhost:4200/ to view the application.
+5. Run ng build if you want create a distribution production-ready

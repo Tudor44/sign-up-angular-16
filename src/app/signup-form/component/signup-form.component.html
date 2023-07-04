@@ -1,0 +1,62 @@
+<div class="register-form">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label>First Name</label>
+        <input
+          type="text"
+          formControlName="firstName"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': submitted && controls['firstName'].errors }"
+        />
+        <div *ngIf="submitted && controls['firstName'].errors" class="invalid-feedback">
+          <div *ngIf="controls['firstName'].errors['required']">First Name is required</div>
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label>Last Name</label>
+        <input
+          type="text"
+          formControlName="lastName"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': submitted && controls['lastName'].errors }"
+        />
+        <div *ngIf="submitted && controls['lastName'].errors" class="invalid-feedback">
+          <div *ngIf="controls['lastName'].errors['required']">Last Name is required</div>
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label>Email</label>
+        <input
+          type="text"
+          formControlName="email"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': submitted && controls['email'].errors }"
+        />
+        <div *ngIf="submitted && controls['email'].errors" class="invalid-feedback">
+          <div *ngIf="controls['email'].errors['required']">Email is required</div>
+          <div *ngIf="controls['email'].errors['email']">Email is invalid</div>
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label>Password</label>
+        <input
+          type="password"
+          formControlName="password"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': submitted && controls['password'].errors }"
+        />
+        <div *ngIf="submitted && controls['password'].errors" class="invalid-feedback">
+          <div *ngIf="submitted && controls['password'].errors['passwordError']">
+            Password must be at least 8 characters, lower and uppercase letters and with not user's first or last name
+          </div>
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Register</button>
+      </div>
+    </form>
+  </div>

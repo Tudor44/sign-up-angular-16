@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body {
+    background: #e8f3cb;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .left-content {
+    flex: 1;
+    padding: 50px;
+    color: #333;
+  }
+  
+  .right-content {
+    flex: 1;
+    background: #fff;
+    padding: 50px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  }
